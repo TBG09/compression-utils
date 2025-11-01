@@ -1,0 +1,22 @@
+outputs = []
+prebuilts = []
+
+[package]
+name = "zlib"
+version = "0.91"
+description = "A free, general-purpose, legally unencumbered -- that is, not covered by any patents -- lossless data-compression library. Version 0.91."
+estimated_size = 0
+
+[source]
+url = "https://www.zlib.net/fossils/zlib-0.91.tar.gz"
+
+[dependencies]
+build = []
+runtime = []
+system = []
+
+[build]
+steps = []
+
+[source.hash]
+sha256 = "090ffc9fb9f957761dd2365323e87b42b20e81ff52bc978a406d696975900457"
