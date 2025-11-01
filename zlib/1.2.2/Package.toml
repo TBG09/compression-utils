@@ -1,0 +1,22 @@
+outputs = []
+prebuilts = []
+
+[package]
+name = "zlib"
+version = "1.2.2"
+description = "A massively spiffy yet delicately unobtrusive compression library."
+estimated_size = 0
+
+[source]
+url = "https://api.github.com/repos/madler/zlib/tarball/refs/tags/v1.2.2"
+
+[dependencies]
+build = []
+runtime = []
+system = []
+
+[build]
+steps = []
+
+[source.hash]
+sha256 = "bf3db46ea5ece71c22e2263b70665493643c90a97dbf86f99d9f1d14ed0d0512"
