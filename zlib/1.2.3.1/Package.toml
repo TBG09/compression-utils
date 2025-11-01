@@ -1,0 +1,36 @@
+prebuilts = []
+[[outputs]]
+type = "lib"
+path = "lib/libz.a"
+
+[[outputs]]
+type = "lib"
+path = "lib/libz.so"
+
+[[outputs]]
+type = "include"
+path = "include/zlib.h"
+
+[[outputs]]
+type = "include"
+path = "include/zconf.h"
+
+[package]
+name = "zlib"
+version = "1.2.3.1"
+description = "A massively spiffy yet delicately unobtrusive compression library."
+estimated_size = 0
+
+[source]
+url = "https://www.zlib.net/fossils/zlib-1.2.3.1.tar.gz"
+
+[dependencies]
+build = []
+runtime = []
+system = []
+
+[build]
+steps = [ "./configure --prefix=${INSTALL_DIR}", "make", "make install",]
+
+[source.hash]
+sha256 = "61762fbd87c4c4c1996c3e0c3fb4c8c14a856d540330435c787696ab8846cba6"
